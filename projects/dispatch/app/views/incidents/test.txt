@@ -1,0 +1,3 @@
+            where(incident_type_id: @incident.incident_type_id) } %>    
+        , incident_questions: @incident_questions %>
+

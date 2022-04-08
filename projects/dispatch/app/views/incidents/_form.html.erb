@@ -1,0 +1,76 @@
+<%= form_for(@incident) do |f| %>
+    <% if @incident.errors.any? %>
+        <div class="ui negative message" id="error_explanation">
+            <h2><%= pluralize(@incident.errors.count, "error") %> prohibited this incident from being saved:</h2>
+
+            <ul>
+                <% @incident.errors.full_messages.each do |message| %>
+                    <li><%= message %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+        <%= f.label :location %>
+        <%= f.text_field :location %>
+    </div>
+
+    <div class="field">
+        <%= f.label :start_date %>
+            <div class="ui calendar" id="incident-date">
+                <div class="ui input left icon">
+                    <i class="time icon"></i>
+                    <input type="datetime" placeholder="Choose the incident date" name="incident[start_date]">
+                </div>
+            </div>
+    </div>
+
+    <div class="field">
+        <%= f.label :incident_type_id %>
+        <%= f.select :incident_type_id, 
+                    options_for_select(IncidentType.all.map { |incidentType| [
+                        incidentType.name, 
+                        incidentType.id, 
+                        { 'data-default-severity' => incidentType.default_severity }
+                    ] }), 
+                    {:prompt => "Choose the incident type"}, {:class => "ui dropdown", :onchange => "updateQuestions(this.value)"} 
+        %>
+    </div>
+    
+    <div id="incident-type-questions">
+        <%= render "/incident_questions/form", f: f %>
+    </div>
+
+    <div class="field">
+        <%= f.label :severity %>
+        <div class="ui range" id="severity-range"></div>
+        <div class="ui input" id="severity-ui-input">
+          <input type="text" id="severity-input" name="incident[severity]">
+        </div>
+    </div>
+
+    <div class="field">
+        <%= f.label :images %>
+        <%= f.file_field :picture %>
+    </div>
+
+    <div class="field">
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+    </div>
+    
+    <div class="ui primary button">
+        <%= f.submit %>
+    </div>
+
+<% end %>
+
+<script type='text/javascript'>
+    function updateQuestions(value) {
+        $("#incident-questions-type-" + value).show();
+        $("#incident-questions-type-" + value).attr("disabled", false);
+        $("#incident-questions-type-" + value).siblings().hide();
+        $("#incident-questions-type-" + value).attr("disabled", true);;
+    }
+</script>

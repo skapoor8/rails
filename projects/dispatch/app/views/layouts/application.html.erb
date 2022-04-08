@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Comp120</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <%= yield(:header) %>
+
+</head>
+
+
+<body>
+
+    <div class="ui inverted nav mobile or lower hidden menu">
+        <%= link_to incidents_path do %>
+            <%= image_tag("dispatch-logo-transparent.png", class: "dispatch-logo")%>
+        <% end %>
+        <div class="right menu">
+            <% if logged_in? %>
+            <%= api_doc_menu_item %> 
+            <!-- insert link to all users for admin -->
+            <!-- <a href=<%= user_path current_user %> class="item">My Account</a> -->
+            <%= link_to "My Account", current_user, class: "item" %>
+            <%= link_to "Logout", logout_path, class: "item", method: "delete" %>
+            <% else %>
+            <%= api_doc_menu_item %> 
+            <% end %>
+        </div>
+    </div>
+
+    <div class="ui inverted nav mobile only menu">
+        <div class="centered-logo-wrapper">
+            <div class="centered-logo">
+                <%= link_to incidents_path do %>
+                    <%= image_tag("dispatch-logo-transparent.png", class: "dispatch-logo mobile")%>
+                <% end %>
+            </div>
+        </div>
+        <div class="right menu">
+            <a class="item">
+                <i class="sidebar icon"></i>
+            </a>
+        </div>
+    </div>
+
+    <%= yield %>
+    <%= yield(:body) %>
+
+    <!-- temporary debugging helper --> 
+<!--     <div class="container">
+        <%= debug(params) if Rails.env.development? %>
+    </div> -->
+
+
+</body>
+</html>

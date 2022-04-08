@@ -1,0 +1,19 @@
+<div class="ui raised segment" id="logInBox">
+
+
+<%= image_tag("/images/oom_yung_doe_seal_small.png", id: "logInImage") %>
+
+<%= form_tag sessions_path do %>
+  <p>
+    <strong><%= label_tag :email %></strong>
+    <div class="ui input" id="emailInput"><%= text_field_tag :email, params[:email] %></div>
+  </p>
+  <p>
+    <strong><%= label_tag :password %></strong>
+    <div class="ui input" id="passwordInput"><%= password_field_tag :password %></div>
+  </p>
+  <p><%= submit_tag "Log in", class: "ui primary button", id: "LogInButton" %></p>
+<% end %>
+<br>
+<center>Forgot your password? <%= link_to "Reset it.", "#" %></center>
+</div>

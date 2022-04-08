@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Incident question:</strong>
+  <%= @report_custom_comment.incident_question %>
+</p>
+
+<p>
+  <strong>Answer:</strong>
+  <%= @report_custom_comment.answer %>
+</p>
+
+<p>
+  <strong>Range value:</strong>
+  <%= @report_custom_comment.range_value %>
+</p>
+
+<%= link_to 'Edit', edit_report_custom_comment_path(@report_custom_comment) %> |
+<%= link_to 'Back', report_custom_comments_path %>

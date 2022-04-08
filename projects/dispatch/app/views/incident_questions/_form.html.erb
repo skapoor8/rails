@@ -1,0 +1,42 @@
+<% incident_groups = IncidentQuestion.all.group_by{|r| r.incident_type_id} %>
+<% incident_groups.each do |incident_type_id, incident_questions| %>
+    <div id="incident-questions-type-<%= incident_type_id %>">
+        <% incident_questions.each do |question| %>
+            <div class="grouped fields">
+                <%= label_tag(:question, question.question) %>
+
+                <% question_options = IncidentQuestionAnswer.where(incident_question_id: question.id) %>
+
+                <% if question_options.blank? %>
+                    <div class="field">
+                        <!-- <%= f.fields_for :report_custom_comments do |form| %> -->
+                            <%= form.text_field(:answer)%>
+                        <!-- <% end %> -->
+                    </div>
+                <% else %>
+                    <div class="multi-option field">
+                        <!-- <%= f.fields_for :report_comments do |form| %> -->
+                            <% case question.question_form %>
+                                <% when 3 %>
+                                    <% question_options.each do |option| %>
+                                        <div class="ui radio checkbox">
+                                            <%= form.radio_button :incident_question_answer_id, option.id %>
+                                            <%= form.label option.answer %>
+                                        </div>
+                                    <% end %>
+                                <% when 4 %>
+                                    <% question_options.each do |option| %>
+                                        <div class="ui checkbox">
+                                            <%= form.check_box :incident_question_answer_id, {}, option.id, nil %>
+                                            <%= form.label option.answer %>
+                                        </div>
+                                    <% end %>
+                                <% else %>
+                             <% end %>
+                        <!-- <% end %> -->
+                    </div>
+                <% end %>
+            </div>
+        <% end %>
+    </div>
+<% end %>

@@ -1,0 +1,153 @@
+<p id="notice"><%= notice %></p>
+<div class="ui secondary segment" id="data-entry-nav">
+  <div><%= link_to '<i class="angle left icon"> </i>'.html_safe, user_path(params[:user], selected: @school.id, prev_date: params[:date]), class: "ui large blue circular label", id: "data-entry-back-btn"%> </div>
+  <div id="data-entry-date"><%= params[:date].to_date.strftime("%B %d, %Y") %> </div>
+  <div id="school-open-or-closed" class="ui buttons"><%= button_to "School Open", "#", class: "ui green button" %> 
+    <div class="or"></div>
+  <%= button_to "School Closed", "#", class: "ui button" %></div>
+</div>
+
+<div id="daily-dashboard">
+
+<table id="daily-stats">
+    <tr>
+      <th id="active">
+        <div class="ui big label">
+          <div class="detail">0</div>
+        </div><br>
+        ACTIVE 
+      </th>
+      <th>
+        <div class="ui big label">
+          <div class="detail">0</div>
+        </div><br>
+        ATTENDANCE
+      </th>
+      <th>
+        <div class="ui big label">
+          <div class="detail">0</div>
+        </div><br>
+        INFOS
+      </th>
+      <th>
+        <div class="ui big label">
+          <div class="detail">0</div>
+        </div><br>
+        NEW STUDENTS
+      </th>
+      <th>
+        <div class="ui big label">
+          <div class="detail">0</div>
+        </div><br>
+        NEW COURSES
+      </th>
+      <th>
+        <div class="ui big label">
+          <div class="detail">0</div>
+        </div><br>
+        TESTS
+      </th>
+      <th>
+        <div class="ui big label">
+          <div class="detail">0</div>
+        </div><br>
+        DROPS
+      </th>
+    </tr>
+  </table>
+
+</div>
+
+<br><br><br>
+<div class="ui divider"></div>
+<br>
+
+<div id="attendance"> 
+  <br>
+  <strong> Attendance: </strong>
+  <%= form_tag(mark_attendances_path(@school), method: "get") do %>
+    <%= select_tag :present, options_from_collection_for_select(@students_absent, "id", "first_name") , multiple: true%>
+    <%= hidden_field_tag :user, @user_id.to_s %>
+    <%= hidden_field_tag :date, @date.to_s %>
+    <br>
+    <%= submit_tag("Mark Present") %>
+  <% end %>
+  <ol>
+    <% @students_present.each do |s| %>
+        <li><%= s.first_name + " " + s.last_name %></li>
+    <% end %>
+  </ol>
+  <br>
+
+  <% new_registrations = NewStudentEvent.where(signup_date: @date.beginning_of_day..@date.end_of_day) %>
+  <% if new_registrations.none? %>
+    <strong><%= "No New Registrations" %></strong><br>
+  <% else %>
+    <strong><%= "New Students" %></strong>
+    <%= logger.debug new_registrations %>
+    <ol>
+    <% new_registrations.each do |n| %>
+      <% s = Student.find(n.student_id) %>
+      <li><%= s.id %></li>
+    <% end %>
+    </ol>
+  <% end %>
+
+  <% new_informations = Information.where(date_visited: @date.beginning_of_day..@date.end_of_day) %>
+  <% if new_informations.none? %>
+    <strong>No New Informations</strong><br>
+  <% else %>
+    <strong>New Informations</strong>
+    <ol>
+    <% new_informations.each do |n| %>
+      <li><%= n.first_name + " " + n.last_name %></li>
+    <% end %>
+    </ol>
+  <% end %>
+
+  <% tests = Test.where(test_date:@date.beginning_of_day..@date.end_of_day) %>
+  <% if not tests.none? %>
+    <% passes = tests.where(pass_fail: true) %>
+    <% fails = tests.where(pass_fail: false) %>
+    
+    <% if not passes.none? %>
+      <% passes.each do |t| %>
+      <strong> Tests Passed </strong>
+      <ol>
+        <li> <%= Student.find(t.student_id).first_name + " passed the test for " + t.rank_tested %> </li>
+      </ol>
+      <% end %>
+    <% end %>
+    
+    <% if not fails.none? %>
+      <% fails.each do |t| %>
+      <strong> Tests Passed </strong>
+      <ol>
+        <li> <%= Student.find(t.student_id).first_name + " failed the test for " + t.rank_tested %> </li>
+      </ol>
+      <% end %>
+    <% end %>
+
+    <% @Mlt = MltAttendance.all %>
+    <% if @Mlt.none? %>
+      <strong> No MLT Attendances </strong><br>
+    <% else %>
+      <strong>MLT Attendances</strong>
+      <ol>
+      <% @Mlt.each do |m| %>
+        <li><%= Student.find(m.student_id).first_name + " attended course no. " + m.course.to_s + " lesson " + m.lesson.to_s %></li>
+      <% end %>
+      </ol>
+    <% end %>
+
+  <% end %>
+
+  <%= link_to "New Student", register_student_path(date: @date, user: @user_id) %>
+  <%= link_to "New Information", add_information_path(date: @date, user: @user_ids, school: @school.id) %>
+  <%= link_to "New Test", new_test_path(date: @date, school: @school.id) %>
+  <%= link_to "New MLT Lesson", new_mlt_attendance_path(date: @date, school: @school.id) %>
+  <%= link_to "New Drop", "#" %>
+
+</div>
+
+

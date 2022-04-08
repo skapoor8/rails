@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  name: "Medical"
+  default_severity: 5
+
+two:
+  id: 2
+  name: "Burglary"
+  default_severity: 7

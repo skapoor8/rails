@@ -1,0 +1,375 @@
+/* line 1, /Users/siddharthkapoor/Desktop/Rails Projects/OYD_Daily/OYD_Daily_App/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/siddharthkapoor/Desktop/Rails Projects/OYD_Daily/OYD_Daily_App/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/siddharthkapoor/Desktop/Rails Projects/OYD_Daily/OYD_Daily_App/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/siddharthkapoor/Desktop/Rails Projects/OYD_Daily/OYD_Daily_App/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/siddharthkapoor/Desktop/Rails Projects/OYD_Daily/OYD_Daily_App/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/siddharthkapoor/Desktop/Rails Projects/OYD_Daily/OYD_Daily_App/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/siddharthkapoor/Desktop/Rails Projects/OYD_Daily/OYD_Daily_App/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/siddharthkapoor/Desktop/Rails Projects/OYD_Daily/OYD_Daily_App/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /Users/siddharthkapoor/Desktop/Rails Projects/OYD_Daily/OYD_Daily_App/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /Users/siddharthkapoor/Desktop/Rails Projects/OYD_Daily/OYD_Daily_App/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /Users/siddharthkapoor/Desktop/Rails Projects/OYD_Daily/OYD_Daily_App/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /Users/siddharthkapoor/Desktop/Rails Projects/OYD_Daily/OYD_Daily_App/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /Users/siddharthkapoor/Desktop/Rails Projects/OYD_Daily/OYD_Daily_App/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /Users/siddharthkapoor/Desktop/Rails Projects/OYD_Daily/OYD_Daily_App/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /Users/siddharthkapoor/Desktop/Rails Projects/OYD_Daily/OYD_Daily_App/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/* =======================================================
+	NAV BAR
+======================================================= */
+
+
+#menuWrapper {
+	height: 4vw;
+	border-radius: 0;
+	position: fixed;
+	width: 100vw;
+	z-index: 1;
+}
+
+#menuIconWrapper {
+	/*
+	border-style: solid;
+	border-color: red;
+	*/
+	width: 5%; 
+}
+
+#school-options .item {
+
+	position: static !important;
+	height: 3vw !important;
+	padding-left: 0.9em;
+	padding-top: 0.5em;
+}
+
+#menuIcon {
+	width: auto;
+	height: 100%;
+	/*
+	border-style: solid;
+	*/
+	padding-left: 20%;
+}
+
+#logoWrapper {
+	width: 90%;
+	/*
+	border-style: solid;
+	border-color: green;
+	*/
+	padding-left: 32.5%;
+}
+
+#logo {
+	width: 35%;
+	/*
+	border-style: solid;
+	*/
+}
+
+#navBarImage {
+	width: 18%;
+
+	padding-top: 0.5%;
+	padding-right: 2%;
+}
+
+#profileMenuWrapper {
+	width: 5%;
+	/*
+	border-style: solid;
+	border-color: blue;
+	*/
+}
+
+#profileMenu {
+	/*
+	border-style: solid;
+	*/
+	height: 100%;
+
+}
+
+#profileIcon {
+	padding-left: 20%;
+}
+
+#navDropdown {
+	width: 250%;
+}
+
+#navDropdown .item {
+	width: 100%;
+	text-align: center;
+}
+
+#loggedInAs {
+	/*
+	border-style: solid;
+	border-color: yellow;
+	*/
+	text-align: center;
+}
+
+
+/* =======================================================
+	LOG-IN PAGE
+======================================================= */
+
+#logInBox {
+	width: 30%;
+	height: 56%;
+	vertical-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 8%;
+	margin-bottom: 15%;
+
+}
+
+#emailInput, #passwordInput {
+	width: 100%;
+	margin-left: auto;
+}
+
+#LogInButton {
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logInImage {
+	width: 40%;
+	margin-left: 30%;
+	padding-top: 3%;
+}
+
+/* =======================================================
+	DAILY INFO - CALENDAR PAGE
+======================================================= */
+
+#school-selector {
+	/*border: solid;
+	border-color: red;*/
+	margin-top: 0.3%;
+	padding-right: 2%;
+	float: left;
+}
+
+#monthly-stats {
+	/*border: solid;
+	border-color: green;*/
+
+	float: left;
+	font-size: 9px;
+}
+
+#dashboard {
+	/*border: solid;
+	border-color: blue;*/
+	width: 65vw;
+	margin-left: 17.5vw;
+}
+
+#monthly-stats th {
+	/*border: solid;*/
+	width: 6.63vw;
+}
+
+#active {
+	/*border: solid;*/
+}
+
+#DailyInfoCalendar {
+	width: 80vw;
+	margin-left: 10vw;
+	text-align: center;
+}
+
+#DailyInfoCalendar thead tr {
+	height: 3vh;
+}
+
+#DailyInfoCalendar tbody tr {
+	height: 15vh;
+	vertical-align: sub;
+}
+
+#DailyInfoCalendar .ui.circular.label {
+	font-size: 14px !important;
+	font-weight: normal !important;
+
+}
+
+.calendar-heading {
+	font-size: 24px !important;
+	width: 100vw;
+	text-align: center;
+}
+
+#prev-month-button {
+	position: relative;
+	float: left;
+	z-index: 1;
+	left: 42vw;
+}
+
+#next-month-button {
+	position: relative;
+	float: right;
+	z-index: 1;
+	right: 42vw;
+}
+
+/* =======================================================
+	DAILY INFO - DATA ENTRY PAGE
+======================================================= */
+
+#data-entry-nav {
+	width: 80vw !important;
+	margin-left: 10vw;
+}
+
+#data-entry-back-btn {
+	float: left;
+	margin-top: -0.5%;
+}
+#data-entry-back-btn i {
+	font-size: 0.8em !important;
+	margin-left: 0.28%;
+}
+
+#data-entry-date {
+	display: inline;
+	margin-left: 31.5vw;
+}
+
+#data-entry-nav .ui.button {
+	height: 90% !important;
+	border-radius: 4px !important;
+	padding-top: -20% !important;
+}
+
+#data-entry-nav .or {
+	margin-top: -0.5%;
+}
+
+#school-open-or-closed {
+	float: right;
+	margin-top: -0.7%;
+}
+
+#daily-dashboard {
+	width: 65vw;
+	margin-left: 17.5vw;
+
+}
+
+#daily-stats {
+	float: left;
+	font-size: 9px;
+	width: 50vw;
+	margin-left: 6vw;
+}
+
+#daily-stats th {
+	/*border: solid;*/
+	width: 6.63vw;
+	font-size: 9px;
+
+}

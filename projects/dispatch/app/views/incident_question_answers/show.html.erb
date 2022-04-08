@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Incident question:</strong>
+  <%= @incident_question_answer.incident_question %>
+</p>
+
+<p>
+  <strong>Answer:</strong>
+  <%= @incident_question_answer.answer %>
+</p>
+
+<p>
+  <strong>Default answer:</strong>
+  <%= @incident_question_answer.default_answer %>
+</p>
+
+<%= link_to 'Edit', edit_incident_question_answer_path(@incident_question_answer) %> |
+<%= link_to 'Back', incident_question_answers_path %>

@@ -1,0 +1,20 @@
+<body class="page-main">
+    
+<div class="ui middle aligned center aligned fluid grid">
+    <div class="left aligned eight wide computer fourteen wide tablet column">
+        <div class="ui segment">
+
+            <div class="ui form">
+                <h1> Profile </h1>
+                <div class="user grouped fields">
+                    <div class="field"><%= @user.first_name %></div>
+                    <div class="field"><%= @user.last_name %></div>
+                    <div class="field"><%= @user.email %></div>
+                    <div class="field"><%= @user.phone_number %></div>
+                </div>
+                <%= link_to "Edit", edit_user_path(current_user), class: "ui button" %>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,64 @@
+{
+    "Operations Services": [
+        {
+         "value": "Dining",
+         "responsibilities": []
+        },
+        {
+         "value": "Energy & Facilities",
+         "responsibilities": []
+        },
+        {
+         "value": "Environmental Health & Safety",
+         "responsibilities": []
+        },
+        {
+         "value":  "Housing",
+         "responsibilities": []
+        },
+        {
+         "value": "Mail & Print",
+         "responsibilities": []
+        },
+        {
+         "value": "Sustainability",
+         "responsibilities": []
+        },
+        {
+         "value":  "Events Management",
+         "responsibilities": []
+        }, 
+        {
+         "value": "Sustainability",
+         "responsibilities": []
+        },
+        {
+         "value":  "Transportation",
+         "responsibilities": []
+         }
+        ],
+    "Environmental Health & Safety Department": [
+        {
+         "value": "Buildings and Facilities",
+         "responsibilities": []
+        },
+        {
+         "value":  "Construction Support",
+         "responsibilities": []
+        },
+        {
+         "value":  "Environmental Management",
+         "responsibilities": []
+        },
+        {
+         "value": "Laboratories",
+         "responsibilities": []
+        },
+        {
+         "value":"Training",
+         "responsibilities": []
+        }
+       ]
+}
+
+

@@ -1,0 +1,66 @@
+<body>
+
+   <!--  <div class="green_button edit">
+        <%= link_to 'Edit', edit_incident_path(@incident) %>
+    </div> -->
+
+    <div class="ui middle aligned center aligned relaxed show grid">
+            <div class="left aligned eight wide computer fourteen wide tablet column">
+                <div class="ui button back">
+                    <%= link_to 'Back', incidents_path %>
+                </div>
+                <div class="ui segment">
+                    <p id="notice"><%= notice %></p>
+                    <div class="row">
+                        <span class="date">
+                        <%= @incident.start_date.strftime("%b #{@incident.start_date.day.ordinalize}, %Y")%>
+                        <br>
+                        <%= @incident.start_date.strftime("%l:%M %p")%>
+                        </span>
+                    </div>
+
+                    <div class="severity detail">Severity</div>
+                    <div class="ui top right attached circular level-<%= @incident.severity%>-background big label">
+                        <%= @incident.severity %>
+                    </div>
+
+                    <div class="row">
+                        <div class="ui header">
+                            <%= @incident.incident_type.name %>
+                        </div>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+
+                    <div class="location row">
+                        <span class="bold-label">Location:</span> <%= @incident.location %>
+                    </div>
+
+                    <div class="comments">
+                        <% @report_comments.each do |r| %>
+                            <div class="row">
+                                <div class="field">
+                                    <span class="bold-label"><%= r.incident_question_answer.incident_question.question  %></span>
+                                </div>
+                                    <%= r.incident_question_answer.answer %>
+                            </div>
+                        <% end %>
+                        <% @report_custom_comments.each do |r| %>
+                            <div class="row">
+                                <div class="field">
+                                     <span class="bold-label"><%= r.incident_question.question  %></span>
+                                </div>
+                                    <% if not r.answer.nil? %>
+                                        <%= r.answer %>
+                                    <% else %>
+                                        <%= r.range_value %>
+                                    <% end %> 
+                            </div>
+                        <% end %>
+                        
+                    </div>
+  </div>
+            </div>
+        </div>
+</body>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: "389 Boston Ave, Medford MA"
+  report_date: 2016-02-15 18:55:50
+  start_date: 2016-02-15 18:55:50
+  checkout_date: 2016-02-15 18:55:50
+  resolve_date: 2016-02-15 18:55:50
+  incident_type_id: 1
+  severity: 4
+  bump_count: 1
+  name: "Broken foot"
+
+two:
+  location: "111 College Ave, Medford, MA"
+  report_date: 2016-02-15 18:55:50
+  start_date: 2016-02-15 18:55:50
+  checkout_date: 2016-02-15 18:55:50
+  resolve_date: 2016-02-15 18:55:50
+  incident_type_id: 2
+  severity: 9
+  bump_count: 1
+  name: "Flash mob stole my wallet"

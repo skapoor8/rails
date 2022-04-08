@@ -1,0 +1,12 @@
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  incident: 
+  user: 
+  custom_comment: MyText
+
+two:
+  incident: 
+  user: 
+  custom_comment: MyText

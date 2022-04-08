@@ -1,0 +1,537 @@
+{
+	"Unknown": [{
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Animals and Animal Safety": [{
+		"question": "What animal(s) were involved?",
+		"form": "checkbox",
+		"answer": [
+			"cat", "dog", "squirrel", "rat", "mouse", "raccoon",
+			"cockroach", "bed bug", "bear", "deer", "moose", "wolf",
+			"bird", "other", "I don't know"
+		]
+	}, {
+		"question": "Did it have rabies?",
+		"form": "radio",
+		"answer": [
+			"yes", "no", "not relevant", "I don't know"
+		]
+	}, {
+		"question": "Did the animal bite somebody?",
+		"form": "radio",
+		"answer": [
+			"yes", "no", "not relevant", "I don't know"
+		]
+	}, {
+		"question": "Was the animal injured?",
+		"form": "radio",
+		"answer": [
+			"yes", "no", "not relevant", "I don't know"
+		]
+	}, {
+		"question": "How many animals were involved?",
+		"form": "range",
+		"answer": {
+			"min_val": 0,
+			"max_val": 100
+		}
+	}, {
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Asbestos": [{
+		"question": "What object did you find that contained asbestos?",
+		"form": "checkbox",
+		"answer": [
+			"drywall", "plaster", "vinyl floor tiles", "wall tiles",
+			"shingles", "fire blanket", "pipe insulation", "furniture",
+			"other"
+		]
+	}, {
+		"question": "What type of asbestos was it?",
+		"form": "checkbox",
+		"answer": [
+			"chrysotile", "amosite", "crocidolite", "tremolite",
+			"anthophyllite", "actinolite", "I don't know"
+		]
+	}, {
+		"question": "Is the item containing asbestos damaged?",
+		"form": "radio",
+		"answer": [
+			"yes", "no", "not relevant", "I don't know"
+		]
+	}, {
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Biological Agents": [{
+		"question": "Which biological agent was it?",
+		"form": "checkbox",
+		"answer": [
+			"anthrax", "plague", "smallpox",
+			"ebola", "e. coli",
+			"salmonella", "hepatitis A", "west nile virus",
+			"tuberculosis", "flu", "rabies", "other", "I don't know"
+		]
+	}, {
+		"question": "Describe the symptoms?",
+		"form": "string",
+		"answer": []
+	}, {
+		"question": "How was the biological agent spread?",
+		"form": "checkbox",
+		"answer": [
+			"spilled or opened container holding biological agent",
+			"sneezing or coughing",
+			"blood",
+			"food",
+			"not relevant",
+			"I don't know"
+		]
+	}, {
+		"question": "How many people were exposed to the biological agent?",
+		"form": "range",
+		"answer": {
+			"min_val": 0,
+			"max_val": 1000
+		}
+	}, {
+		"question": "How many people were infected by the biological agent?",
+		"form": "range",
+		"answer": {
+			"min_val": 0,
+			"max_val": 1000
+		}
+	}, {
+		"question": "Can the biological agent kill you?",
+		"form": "radio",
+		"answer": [
+			"yes", "no", "not relevant", "I don't know"
+		]
+	}, {
+		"question": "Were there any emergency responders present?",
+		"form": "radio",
+		"answer": [
+			"yes", "no", "not relevant", "I don't know"
+		]
+	}, {
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Bloodborne Pathogens": [{
+		"question": "Which bloodborne pathogen was it?",
+		"form": "checkbox",
+		"answer": [
+			"hepatitis B (HBV)", "hepatitis C (HCV)",
+			"human immunodeficiency virus (HIV)",
+			"other", "I don't know"
+		]
+	}, {
+		"question": "Describe the symptoms?",
+		"form": "string",
+		"answer": []
+	}, {
+		"question": "How was the bloodborne pathogen spread?",
+		"form": "checkbox",
+		"answer": [
+			"needle", "shared drug use",
+			"broken glass",
+			"contanimated water or food",
+			"providing care to bleeding host",
+			"other",
+			"I don't know"
+		]
+	}, {
+		"question": "How many people were exposed to the pathogen?",
+		"form": "radio",
+		"answer": [
+			"0",
+			"1",
+			"2",
+			"3",
+			"4",
+			"5+",
+			"10+"
+		]
+	}, {
+		"question": "How many people were infected by the pathogen?",
+		"form": "radio",
+		"answer": [
+			"0",
+			"1",
+			"2",
+			"3",
+			"4",
+			"5+",
+			"10+"
+		]
+	}, {
+		"question": "Can the biological agent kill you?",
+		"form": "radio",
+		"answer": [
+			"yes", "no", "not relevant", "I don't know"
+		]
+	}, {
+		"question": "Were there any emergency responders present?",
+		"form": "radio",
+		"answer": [
+			"yes", "no", "not relevant", "I don't know"
+		]
+	}, {
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Chemical": [{
+		"question": "Which chemical was it?",
+		"form": "checkbox",
+		"answer": [
+			"frozen nitrogen", "methane", "bleach", "hydrochloric acid",
+			"chloroform", "cyanide", "acetonitrile",
+			"dimethyl sulfoxide (DMSO)", "formaldehyde", "methanol",
+			"sodium hydroxide", "tetrahydrofuran (THF)",
+			"other", "I don't know"
+		]
+	}, {
+		"question": "What kind of chemical incident was it?",
+		"form": "checkbox",
+		"answer": [
+			"spilled in lab during research", "spilled in lab during class",
+			"assault with chemical", "damaged container that was leaking",
+			"found a not approved chemical",
+			"other", "I don't know"
+		]
+	}, {
+		"question": "What form (phase of matter) did it have?",
+		"form": "radio",
+		"answer": [
+			"gas", "liquid", "solid", "plasma",
+			"other", "I don't know"
+		]
+	}, {
+		"question": "Is it flammable?",
+		"form": "radio",
+		"answer": ["yes", "no", "not relevant", "I don't know"]
+	}, {
+		"question": "Was there a fire?",
+		"form": "radio",
+		"answer": ["yes", "no", "not relevant", "I don't know"]
+	}, {
+		"question": "How many people were exposed to the chemical?",
+		"form": "radio",
+		"answer": [
+			"0",
+			"1",
+			"2",
+			"3",
+			"4",
+			"5+",
+			"10+"
+		]
+	}, {
+		"question": "Can the chemical kill you?",
+		"form": "radio",
+		"answer": [
+			"yes", "no", "not relevant", "I don't know"
+		]
+	}, {
+		"question": "Were there any emergency responders present?",
+		"form": "radio",
+		"answer": [
+			"yes", "no", "not relevant", "I don't know"
+		]
+	}, {
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Confined Space": [{
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Cold": [{
+		"question": "Describe your symptoms?",
+		"form": "custom",
+		"answer": []
+	}, {
+		"question": "For how many days have you been sick?",
+		"form": "range",
+		"answer": {
+			"min_val": 0,
+			"max_val": 30
+		}
+	}, {
+		"question": "For how many days have you been taking medication for the cold?",
+		"form": "range",
+		"answer": {
+			"min_val": 0,
+			"max_val": 30
+		}
+	}, {
+		"question": "Are you getting better?",
+		"form": "radio",
+		"answer": [
+			"yes", "no", "I don't know"
+		]
+	}, {
+		"question": "Have you been to a doctor?",
+		"form": "radio",
+		"answer": [
+			"yes", "no", "I don't know"
+		]
+	}, {
+		"question": "How many people were exposed to your cold?",
+		"form": "radio",
+		"answer": [
+			"0",
+			"1",
+			"2",
+			"3",
+			"4",
+			"5+",
+			"10+"
+		]
+	}, {
+		"question": "How many people were infected by your cold?",
+		"form": "radio",
+		"answer": [
+			"0",
+			"1",
+			"2",
+			"3",
+			"4",
+			"5+",
+			"10+"
+		]
+	}, {
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Construction": [{
+		"question": "What kind of construction incident was it?",
+		"form": "checkbox",
+		"answer": [
+			"injury", "pothole", "building damage",
+			"unsafe work practices", "burst pipe",
+			"water damage", "other", "I don't know"
+		]
+	}, {
+		"question": "How many people were injured?",
+		"form": "radio",
+		"answer": [
+			"0",
+			"1",
+			"2",
+			"3",
+			"4",
+			"5+",
+			"10+"
+		]
+	}, {
+		"question": "For how many days has this been an issue?",
+		"form": "radio",
+		"answer": [
+
+			"0", "1", "2+", "5+", "10+", "not relevant", "I don't know"
+		]
+	}, {
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Cranes and Hoists": [{
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Driving": [{
+		"question": "What kind of driving incident was it?",
+		"form": "checkbox",
+		"answer": [
+			"car crash", "read-end", "car hit pedestrian",
+			"care pile-up", "illegal parking",
+			"icy road", "out of gas", "car broke down",
+			"other", "I don't know"
+		]
+	}, {
+		"question": "How many people were injured?",
+		"form": "radio",
+		"answer": [
+			"0",
+			"1",
+			"2",
+			"3",
+			"4",
+			"5+",
+			"10+"
+		]
+	}, {
+		"question": "How many cars were involved?",
+		"form": "radio",
+		"answer": [
+
+			"0", "1", "2", "3", "4", "5+", "I don't know"
+		]
+	}, {
+		"question": "Were there any witnesses?",
+		"form": "radio",
+		"answer": [
+			"yes", "no", "I don't know"
+		]
+	}, {
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Dust": [{
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Electrical": [{
+		"question": "What was the electrical incident?",
+		"form": "checkbox",
+		"answer": [
+			"electrocution", "exposed wiring", "downed power line",
+			"blackout", "damaged or non-functional outlet(s)",
+			"other", "I don't know"
+		]
+	}, {
+		"question": "How many people were injured?",
+		"form": "radio",
+		"answer": [
+			"0",
+			"1",
+			"2",
+			"3",
+			"4",
+			"5+",
+			"10+"
+		]
+	}, {
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Ergonomics": [{
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Fire": [{
+		"question": "What type of fire was it?",
+		"form": "checkbox",
+		"answer": [
+			"wood", "furniture", "electrical", "car",
+			"gas", "oil", "outdoors",
+			"other", "I don't know"
+		]
+	}, {
+		"question": "What was on fire?",
+		"form": "checkbox",
+		"answer": [
+			"kitchen", "furniture", "house", "outdoors",
+			"vehicle", "machinery", "other", "I don't know"
+		]
+	}, {
+		"question": "What caused the fire?",
+		"form": "checkbox",
+		"answer": [
+			"too many plugs in outlet", "oil spill during cooking",
+			"car crash", "cigarette", "candle", "banned fire hazard",
+			"explosion", "electrical short-circuit or damage",
+			"not extinguished outdoors fire / camp-fire",
+			"other", "I don't know"
+		]
+	}, {
+		"question": "How many people were injured?",
+		"form": "radio",
+		"answer": [
+			"0",
+			"1",
+			"2",
+			"3",
+			"4",
+			"5+",
+			"10+"
+		]
+	}, {
+		"question": "Were there any witnesses?",
+		"form": "radio",
+		"answer": [
+			"yes", "no", "I don't know"
+		]
+	}, {
+		"question": "Were there any emergency responders?",
+		"form": "radio",
+		"answer": [
+			"yes", "no", "I don't know"
+		]
+	}, {
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Hazardous Waste": [{
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Heat": [{
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Indoor Air Quality": [{
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Lab Safety": [{
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Lead": [{
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Medical": [{
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Mold": [{
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Oil and Gas": [{
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Radiation": [{
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Scaffolding": [{
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}],
+	"Training": [{
+		"question": "Please list any relevant information",
+		"form": "custom",
+		"answer": []
+	}]
+}

@@ -1,0 +1,16 @@
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  incident_type: 
+  question: MyString
+  question_form: 1
+  min_val: 1
+  max_val: 1
+
+two:
+  incident_type: 
+  question: MyString
+  question_form: 1
+  min_val: 1
+  max_val: 1

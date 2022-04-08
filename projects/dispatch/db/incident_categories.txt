@@ -1,0 +1,26 @@
+Animals and Animal Safety,4
+Asbestos,10
+Biological Agents,10
+Bloodborne Pathogens,10
+Chemical,10
+Confined Space,5
+Cold,5
+Construction,2
+Cranes and Hoists,2
+Driving,4
+Dust,2
+Electrical,8
+Ergonomics,1
+Fire,10
+Hazardous Waste,10
+Heat,5
+Indoor Air Quality,2
+Lab Safety,4
+Lead,8
+Medical,6
+Mold,7
+Oil and Gas,5
+Radiation,10
+Scaffolding,3
+Training,1
+Unknown,1

@@ -1,0 +1,39 @@
+Department.delete_all
+main_hash = JSON.parse(File.read("#{Rails.root}/db/departments.json"))
+main_hash.each do |key, value|
+    value.each do |dept|
+        itype = IncidentType.where(name: key).first
+        q = question["question"] 
+        form = question["form"] 
+        answer_array = question["answer"]
+        if form == 'range'
+            min_val = answer_array[0].to_i
+            max_val = answer_array[1].to_i
+            iquestion = IncidentQuestion.new(question: q,
+                                             question_form: qform[form],
+                                             min_val: min_val,
+                                             max_val: max_val,
+                                             incident_type_id: itype.id)
+        else
+            iquestion = IncidentQuestion.new(question: q,
+                                             question_form: qform[form],
+                                             min_val: 0,
+                                             max_val: 0,
+                                             incident_type_id: itype.id)
+        end
+        iquestion.save!
+        setting = false
+        if form == 'radio' or form == 'checkbox'
+            answer_array.each do |answer|
+                iqanswer = IncidentQuestionAnswer.new(incident_question_id: iquestion.id,
+                                                      answer: answer,
+                                                      default_answer: setting)
+                iqanswer.save!
+            end
+
+        end
+    end
+end
+
+
+

@@ -1,0 +1,865 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"passwor",
+				"password_confirmation"
+			],
+			[
+				"valid",
+				"valid_address"
+			],
+			[
+				"vali",
+				"valid_addresses"
+			],
+			[
+				"phone",
+				"phone_number"
+			],
+			[
+				"firs",
+				"first_name"
+			],
+			[
+				"assert",
+				"assert_not"
+			],
+			[
+				"inva",
+				"invalid_user"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"resour",
+				"resources"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/db/migrate/20160315153922_create_users.rb",
+			"settings":
+			{
+				"buffer_size": 242,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/db/schema.rb",
+			"settings":
+			{
+				"buffer_size": 2208,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/test/models/user_test.rb",
+			"settings":
+			{
+				"buffer_size": 2840,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/app/models/user.rb",
+			"settings":
+			{
+				"buffer_size": 558,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/db/migrate/20160315182520_add_index_to_users_email_and_phone_numbers.rb",
+			"settings":
+			{
+				"buffer_size": 150,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/test/fixtures/users.yml",
+			"settings":
+			{
+				"buffer_size": 281,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/db/migrate/20160315192321_add_password_digest_to_users.rb",
+			"settings":
+			{
+				"buffer_size": 129,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/Gemfile",
+			"settings":
+			{
+				"buffer_size": 2346,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/app/views/layouts/application.html.erb",
+			"settings":
+			{
+				"buffer_size": 1307,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/app/assets/stylesheets/incidents.scss",
+			"settings":
+			{
+				"buffer_size": 8285,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/app/assets/stylesheets/scaffolds.scss",
+			"settings":
+			{
+				"buffer_size": 1031,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "routes.rb",
+			"settings":
+			{
+				"buffer_size": 1776,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/app/controllers/users_controller.rb",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "require \"test_helper\"\n\nclass UsersControllerTest < ActionController::TestCase\n  \n  test \"should get new\" do\n    get :new\n    assert_response :success\n  end\n\nend\n",
+			"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/test/controllers/users_controller_test.rb",
+			"file_size": 161,
+			"file_write_time": 1460720931000000,
+			"settings":
+			{
+				"buffer_size": 161,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/app/views/users/show.html.erb",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/app/views/incidents/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 5344,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/app/views/users/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/db/seeds.rb",
+			"settings":
+			{
+				"buffer_size": 2653,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/Gemfile.lock",
+			"settings":
+			{
+				"buffer_size": 5291,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/app/models/user.rb",
+		"/usr/local/Cellar/postgresql/9.5.0/homebrew.mxcl.postgresql.plist",
+		"/usr/local/Cellar/postgresql/9.5.0/bin/pg_config",
+		"/usr/local/Cellar/postgresql/9.5.0/bin/postgres",
+		"/usr/local/Cellar/postgresql/9.5.0/bin/psql",
+		"/Users/siddharthkapoor/Desktop/Web Projects/sample_app/Procfile",
+		"/private/etc/profile",
+		"/private/etc/paths",
+		"/Users/siddharthkapoor/.bash_profile",
+		"/Users/siddharthkapoor/.profile",
+		"/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120_project/comp120-spring2016-team4/web: bundle exec rails server -p $PORT",
+		"/Users/siddharthkapoor/Desktop/Web Projects/ruby-getting-started/Gemfile",
+		"/Users/siddharthkapoor/Desktop/Web Projects/ruby-getting-started/config/puma.rb",
+		"/Users/siddharthkapoor/Desktop/Web Projects/dustandsepia.com/bin/spring",
+		"/Users/siddharthkapoor/Desktop/Web Projects/dustandsepia.com/config/routes.rb",
+		"/Users/siddharthkapoor/Desktop/Web Projects/dustandsepia.com/app/views/welcome/index.html.erb",
+		"/Users/siddharthkapoor/Desktop/Web Projects/dustandsepia.com/config.ru",
+		"/Users/siddharthkapoor/Desktop/Web Projects/dustandsepia.com/Rakefile",
+		"/Users/siddharthkapoor/Desktop/Web Projects/dustandsepia.com/README.rdoc",
+		"/Users/siddharthkapoor/Desktop/Web Projects/dustandsepia.com/Gemfile.lock",
+		"/Users/siddharthkapoor/Desktop/Web Projects/dustandsepia.com/Gemfile",
+		"/Users/siddharthkapoor/Desktop/Web Projects/Sample Blog/README.rdoc",
+		"/Users/siddharthkapoor/Desktop/Web Projects/Sample Blog/Gemfile.lock",
+		"/Users/siddharthkapoor/Desktop/Web Projects/Sample Blog/config.ru"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"env",
+			"git",
+			"active",
+			"active_re",
+			"activerec"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 13,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/db/migrate/20160315153922_create_users.rb",
+					"settings":
+					{
+						"buffer_size": 242,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/db/schema.rb",
+					"settings":
+					{
+						"buffer_size": 2208,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/test/models/user_test.rb",
+					"settings":
+					{
+						"buffer_size": 2840,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2202,
+								2202
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/app/models/user.rb",
+					"settings":
+					{
+						"buffer_size": 558,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								203,
+								203
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/db/migrate/20160315182520_add_index_to_users_email_and_phone_numbers.rb",
+					"settings":
+					{
+						"buffer_size": 150,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								125,
+								125
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/test/fixtures/users.yml",
+					"settings":
+					{
+						"buffer_size": 281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								280,
+								280
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/db/migrate/20160315192321_add_password_digest_to_users.rb",
+					"settings":
+					{
+						"buffer_size": 129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/Gemfile",
+					"settings":
+					{
+						"buffer_size": 2346,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 10.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/app/views/layouts/application.html.erb",
+					"settings":
+					{
+						"buffer_size": 1307,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/app/assets/stylesheets/incidents.scss",
+					"settings":
+					{
+						"buffer_size": 8285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4681.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/app/assets/stylesheets/scaffolds.scss",
+					"settings":
+					{
+						"buffer_size": 1031,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 871.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "routes.rb",
+					"settings":
+					{
+						"buffer_size": 1776,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 466.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/app/controllers/users_controller.rb",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/test/controllers/users_controller_test.rb",
+					"settings":
+					{
+						"buffer_size": 161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								107,
+								107
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/app/views/users/show.html.erb",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/app/views/incidents/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 5344,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/app/views/users/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/db/seeds.rb",
+					"settings":
+					{
+						"buffer_size": 2653,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "/Users/siddharthkapoor/Desktop/Web Projects/incidents_portal/comp120-spring2016-team4/Gemfile.lock",
+					"settings":
+					{
+						"buffer_size": 5291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2626.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 166.0,
+	"status_bar_visible": true
+}

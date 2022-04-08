@@ -1,0 +1,284 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require semantic_ui/semantic_ui
+ *= require_tree .
+ *= require_self
+ */
+
+/* =======================================================
+	NAV BAR
+======================================================= */
+
+#menuWrapper {
+	height: 4vw;
+	border-radius: 0;
+	position: fixed;
+	margin-left: -2.4vw;
+	margin-top: -2.4vw;
+	width: 100vw;
+	z-index: 1;
+}
+
+#menuIconWrapper {
+	/*
+	border-style: solid;
+	border-color: red;
+	*/
+	width: 5%; 
+}
+
+#school-options .item {
+
+	position: static !important;
+	height: 3vw !important;
+	padding-left: 0.9em;
+	padding-top: 0.5em;
+}
+
+#menuIcon {
+	width: auto;
+	height: 100%;
+	/*
+	border-style: solid;
+	*/
+	padding-left: 20%;
+}
+
+#logoWrapper {
+	width: 90%;
+	/*
+	border-style: solid;
+	border-color: green;
+	*/
+	padding-left: 32.5%;
+}
+
+#logo {
+	width: 35%;
+	/*
+	border-style: solid;
+	*/
+}
+
+#navBarImage {
+	width: 18%;
+
+	padding-top: 0.5%;
+	padding-right: 2%;
+}
+
+#profileMenuWrapper {
+	width: 5%;
+	/*
+	border-style: solid;
+	border-color: blue;
+	*/
+}
+
+#profileMenu {
+	/*
+	border-style: solid;
+	*/
+	height: 100%;
+
+}
+
+#profileIcon {
+	padding-left: 20%;
+}
+
+#navDropdown {
+	width: 250%;
+}
+
+#navDropdown .item {
+	width: 100%;
+	text-align: center;
+}
+
+#loggedInAs {
+	/*
+	border-style: solid;
+	border-color: yellow;
+	*/
+	text-align: center;
+}
+
+
+/* =======================================================
+	LOG-IN PAGE
+======================================================= */
+
+#logInBox {
+	width: 30%;
+	height: 56%;
+	vertical-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 8%;
+	margin-bottom: 15%;
+
+}
+
+#emailInput, #passwordInput {
+	width: 100%;
+	margin-left: auto;
+}
+
+#LogInButton {
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logInImage {
+	width: 40%;
+	margin-left: 30%;
+	padding-top: 3%;
+}
+
+/* =======================================================
+	DAILY INFO - CALENDAR PAGE
+======================================================= */
+
+#school-selector {
+	/*border: solid;
+	border-color: red;*/
+	margin-top: 0.3%;
+	padding-right: 2%;
+	float: left;
+}
+
+#monthly-stats {
+	/*border: solid;
+	border-color: green;*/
+
+	float: left;
+	font-size: 9px;
+}
+
+#dashboard {
+	/*border: solid;
+	border-color: blue;*/
+	width: 65vw;
+	margin-left: 17.5vw;
+}
+
+#monthly-stats th {
+	/*border: solid;*/
+	width: 6.63vw;
+}
+
+#active {
+	/*border: solid;*/
+}
+
+#DailyInfoCalendar {
+	width: 80vw;
+	margin-left: 10vw;
+	text-align: center;
+}
+
+#DailyInfoCalendar thead tr {
+	height: 3vh;
+}
+
+#DailyInfoCalendar tbody tr {
+	height: 15vh;
+	vertical-align: sub;
+}
+
+#DailyInfoCalendar .ui.circular.label {
+	font-size: 14px !important;
+	font-weight: normal !important;
+
+}
+
+.calendar-heading {
+	font-size: 24px !important;
+	width: 100vw;
+	text-align: center;
+}
+
+#prev-month-button {
+	position: relative;
+	float: left;
+	z-index: 1;
+	left: 42vw;
+}
+
+#next-month-button {
+	position: relative;
+	float: right;
+	z-index: 1;
+	right: 42vw;
+}
+
+/* =======================================================
+	DAILY INFO - DATA ENTRY PAGE
+======================================================= */
+
+#data-entry-nav {
+	width: 80vw !important;
+	margin-left: 10vw;
+}
+
+#data-entry-back-btn {
+	float: left;
+	margin-top: -0.5%;
+}
+#data-entry-back-btn i {
+	font-size: 0.8em !important;
+	margin-left: 0.28%;
+}
+
+#data-entry-date {
+	display: inline;
+	margin-left: 31.5vw;
+}
+
+#data-entry-nav .ui.button {
+	height: 90% !important;
+	border-radius: 4px !important;
+	padding-top: -20% !important;
+}
+
+#data-entry-nav .or {
+	margin-top: -0.5%;
+}
+
+#school-open-or-closed {
+	float: right;
+	margin-top: -0.7%;
+}
+
+#daily-dashboard {
+	width: 65vw;
+	margin-left: 17.5vw;
+
+}
+
+#daily-stats {
+	float: left;
+	font-size: 9px;
+	width: 50vw;
+	margin-left: 6vw;
+}
+
+#daily-stats th {
+	/*border: solid;*/
+	width: 6.63vw;
+	font-size: 9px;
+
+}

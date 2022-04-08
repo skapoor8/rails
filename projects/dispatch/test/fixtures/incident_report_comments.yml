@@ -1,0 +1,10 @@
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  incident_question_answer: 
+  incident: 
+
+two:
+  incident_question_answer: 
+  incident: 

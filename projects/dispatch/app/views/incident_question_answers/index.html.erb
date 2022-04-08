@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Incident Question Answers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Incident question</th>
+      <th>Answer</th>
+      <th>Default answer</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @incident_question_answers.each do |incident_question_answer| %>
+      <tr>
+        <td><%= incident_question_answer.incident_question %></td>
+        <td><%= incident_question_answer.answer %></td>
+        <td><%= incident_question_answer.default_answer %></td>
+        <td><%= link_to 'Show', incident_question_answer %></td>
+        <td><%= link_to 'Edit', edit_incident_question_answer_path(incident_question_answer) %></td>
+        <td><%= link_to 'Destroy', incident_question_answer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Incident question answer', new_incident_question_answer_path %>

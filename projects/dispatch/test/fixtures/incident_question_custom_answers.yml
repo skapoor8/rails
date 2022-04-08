@@ -1,0 +1,12 @@
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  incident_question: 
+  answer: MyText
+  range_value: 1
+
+two:
+  incident_question: 
+  answer: MyText
+  range_value: 1

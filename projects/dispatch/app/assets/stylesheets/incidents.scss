@@ -1,0 +1,474 @@
+/* Place all the styles related to the Incidents controller here.
+They will automatically be included in application.css.
+You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+
+$radius: 0.28571429rem;
+$top-color: #C8CCCE;
+$background-color: #ECF0F1;
+$nav-color: #449BB5;
+$dark-grey: #95A5A6;
+
+$level-one: #FFEB3B;
+$level-two: #FFDD29;
+$level-three: #FFCF18;
+$level-four: #FFC107;
+$level-five: #FFAC03;
+$level-six: #FF9800;
+$level-seven: #FF7711;
+$level-eight: #FF5722;
+$level-nine: #EB4D1B;
+$level-ten: #D84315;
+
+$main-blue: #22A7F0;
+
+@font-face {
+    font-family: "Open Sans";
+    src:font-url("open-sans/OpenSans-Regular.ttf") format("truetype");
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src:font-url("open-sans/OpenSans-Light.ttf") format("truetype");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+/* MOBILE HIDING WORKAROUND */
+//https://github.com/Semantic-Org/Semantic-UI/issues/1114
+
+/* Mobile */
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+    [class*="mobile hidden"],
+    [class*="tablet only"]:not(.mobile),
+    [class*="computer only"]:not(.mobile),
+    [class*="large screen only"]:not(.mobile),
+    [class*="widescreen only"]:not(.mobile),
+    [class*="or lower hidden"] {
+        display: none !important;
+    }
+}
+
+/* Tablet / iPad Portrait */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    [class*="mobile only"]:not(.tablet),
+    [class*="tablet hidden"],
+    [class*="computer only"]:not(.tablet),
+    [class*="large screen only"]:not(.tablet),
+    [class*="widescreen only"]:not(.tablet),
+    [class*="or lower hidden"]:not(.mobile) {
+        display: none !important;
+    }
+}
+
+/* Computer / Desktop / iPad Landscape */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    [class*="mobile only"]:not(.computer),
+    [class*="tablet only"]:not(.computer),
+    [class*="computer hidden"],
+    [class*="large screen only"]:not(.computer),
+    [class*="widescreen only"]:not(.computer),
+    [class*="or lower hidden"]:not(.tablet):not(.mobile) {
+        display: none !important;
+    }
+}
+
+/* Large Monitor */
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+    [class*="mobile only"]:not([class*="large screen"]),
+    [class*="tablet only"]:not([class*="large screen"]),
+    [class*="computer only"]:not([class*="large screen"]),
+    [class*="large screen hidden"],
+    [class*="widescreen only"]:not([class*="large screen"]),
+    [class*="or lower hidden"]:not(.computer):not(.tablet):not(.mobile) {
+        display: none !important;
+    }
+}
+
+/* Widescreen Monitor */
+@media only screen and (min-width: 1920px) {
+    [class*="mobile only"]:not([class*="widescreen"]),
+    [class*="tablet only"]:not([class*="widescreen"]),
+    [class*="computer only"]:not([class*="widescreen"]),
+    [class*="large screen only"]:not([class*="widescreen"]),
+    [class*="widescreen hidden"],
+    [class*="widescreen or lower hidden"] {
+        display: none !important;
+    }
+}
+/* COLORS */
+
+.level-1 {
+    border-left: 3px solid $level-one !important;
+}
+
+.level-1-background {
+    background-color: $level-one !important;
+}
+
+.level-2 {
+    border-left: 3px solid $level-two !important;
+}
+
+.level-2-background {
+    background-color: $level-two !important;
+}
+
+.level-3 {
+    border-left: 3px solid $level-three !important;
+}
+
+.level-3-background {
+    background-color: $level-three !important;
+}
+
+.level-4 {
+    border-left: 3px solid $level-four !important;
+}
+
+.level-4-background {
+    background-color: $level-four !important;
+}
+
+.level-5 {
+    border-left: 3px solid $level-five !important;
+}
+
+.level-5-background {
+    background-color: $level-five !important;
+}
+
+.level-6 {
+    border-left: 3px solid $level-six !important;
+}
+
+.level-6-background {
+    background-color: $level-six !important;
+}
+
+.level-7 {
+    border-left: 3px solid $level-seven !important;
+}
+
+.level-7-background {
+    background-color: $level-seven !important;
+}
+
+.level-8 {
+    border-left: 3px solid $level-eight !important;
+}
+
+.level-8-background {
+    background-color: $level-eight !important;
+}
+
+.level-9 {
+    border-left: 3px solid $level-nine !important;
+}
+
+.level-9-background {
+    background-color: $level-nine !important;
+}
+
+.level-10 {
+    border-left: 3px solid $level-ten !important;
+}
+
+.level-10-background {
+    background-color: $level-ten !important;
+}
+
+/* RESET */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    background-color: transparent;
+}
+
+input[type=submit] {
+    border: none;
+    background-color: inherit;
+    display: block;
+    font-size: 1em;
+    padding: .3em 0;
+}
+
+select {
+    border: none;
+    height: 2em;
+    font-size: 1em;
+}
+
+/* SEMANTIC UI */
+
+* :not(i) {
+    font-family: "Open Sans" !important;
+    font-weight: lighter;
+    text-decoration: none;
+}   
+
+body {
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.primary-blue {
+    color: $main-blue;
+}
+
+.dispatch-icon {
+    width: auto;
+    height: 4em;
+    margin: .25em 0;
+    margin-left: .75em;
+    margin-right: -.25em;
+
+}
+
+.dispatch-logo {
+    width: 8em;
+    height: auto;
+    margin: 1em 1em .75em 2em;
+}
+
+.dispatch-logo:not(.mobile) {
+     margin: 1em 1em .75em 2em;
+}
+
+.centered-logo-wrapper {
+    text-align:center;
+}
+
+.centered-logo {
+    margin:0;
+    float:none;
+}
+
+.nav.menu {
+    border-radius: 0;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.new-button {
+    margin: 1em;
+}
+
+.page-main {
+    overflow: auto;
+    background-color: $background-color;
+}
+
+.incident.page-main {
+    border: 1px solid #d4d4d5;
+    border-top: none;
+}
+
+.page-type.menu .active.item {
+    background-color: $background-color !important;
+}
+
+.page-type.menu .right .item, 
+.page-type.menu .right .item:hover {
+    background-color: $main-blue;
+    color: white;
+    border-radius: $radius;
+    margin: .5em 0em;
+}
+
+#filter-menu {
+    float: left;
+    width: calc(25% - 1em);
+    margin-left: 1em;
+    padding: 1em;
+}
+
+#filter-menu .menu {
+    padding: 0em 1em;
+}
+
+#filter-menu .left.floated.header {
+    margin-bottom: 0;
+    line-height: 1.5em;
+}
+
+#filter-menu .active.item {
+    background-color: $main-blue;
+    border-radius: $radius;
+}
+
+#incidents {
+    margin: auto;
+    float: right;
+    display: block;
+    padding: 1em;
+    width: 75%;
+    background: none;
+}
+
+/* Mobile and Tablet */
+@media only screen and (max-width: 991px) {
+
+    .ui.container {
+        width: 90%;
+    }
+
+    .column {
+        text-align: left !important;
+    }
+
+    .severity {
+        font-size: 1em;
+    }
+
+    #incidents {
+        width: 100%;
+    }
+
+    .ui.segment.row {
+        margin-bottom: 1rem !important;
+    }
+
+    #filter-menu {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ui.pagination.menu .item {
+        display: none;
+    }
+
+    .ui.pagination.menu .active.item,
+    .ui.pagination.menu .icon.item  {
+        display: block;
+    }
+}
+
+/* Tablet / iPad Portrait Only */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .new-button {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+.black.headers.row {
+    border-radius: $radius;
+}
+
+.headers .sort.icon {
+    color: gray;
+}
+
+i.ascending, i.descending {
+    color: white !important;
+}
+
+.headers .column:hover, .headers .column:hover * {
+    color: $main-blue !important;
+}
+
+#more-incidents {
+    display: none;
+    padding-bottom: 0em;
+}
+
+.mobile.only.field {
+    color: gray;
+}
+
+.severity {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.severity.detail {
+    font-size: 1em;
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    font-weight: lighter;
+}
+
+.attached.circular {
+    margin: 2em 1.5em !important;
+}
+
+/* Create Incident */
+
+
+/* Fix weird CSS on calendar */
+.ui.calendar table {
+    text-align: center !important;
+}
+
+.ui.bottom.left.popup:before {
+    border-left: 1px solid rgba(34,36,38,0.15);
+    border-top: 1px solid rgba(34,36,38,0.15);
+    box-shadow: none;
+    background-color: #F9FAFB;
+}
+
+[id^="incident-questions-type-"] {
+    display: none;
+}
+
+.multi-option.field {
+    padding: 0em 1em !important;
+}
+
+.ui.checkbox {
+    width: calc(50% - .2em);
+    padding: .5em 0em;
+}
+
+#severity-range {
+    float: right;
+    padding: .5em 1em;
+    padding-right: 0em; 
+    width: 90%;
+}
+
+#severity-range .inner {
+    margin: 0;
+}
+
+#severity-ui-input {
+    width: 10%;
+}
+
+/* Show Incident */
+
+.incident_report {
+    background-color: white;
+    border-radius: $radius;
+    width: 50%;
+    margin: auto;
+    padding: 2%;
+}
+
+.edit {
+    width: 10%;
+}
+
+.location.row {
+    margin: 1em 0em;
+}
+
+.comments .row {
+    margin: 1em 0em;
+}
+
+.bold-label {
+    font-weight: bold;
+}
+

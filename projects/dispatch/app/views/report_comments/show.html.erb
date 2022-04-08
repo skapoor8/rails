@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Incident question answer:</strong>
+  <%= @report_comment.incident_question_answer %>
+</p>
+
+<p>
+  <strong>Incident:</strong>
+  <%= @report_comment.incident %>
+</p>
+
+<%= link_to 'Edit', edit_report_comment_path(@report_comment) %> |
+<%= link_to 'Back', report_comments_path %>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OYD Daily</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery-3.3.1.min', 'semantic_ui/semantic_ui.js', 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+    
+    <% unless controller_name == "sessions" %>
+      <div class="ui segment" id="menuWrapper">
+      <div class="ui text fixed menu">
+
+          <div id="menuIconWrapper">
+          <a class="item" id="menuIcon">
+            <i class="large bars icon"></i>
+           
+          </a>
+          </div>
+
+          <div id="menu" class="ui left vertical sidebar labeled icon menu">
+            <a class="item">
+              <i class="edit icon"></i>
+              Daily Info
+            </a>
+            <a class="item">
+              <i class="users icon"></i>
+              Attendance
+            </a>
+            <a class="item">
+              <i class="chart line icon"></i>
+              Reports
+            </a>
+          </div>
+
+
+          <div id="logoWrapper">
+          <a class="item" id="logo">
+            <%= image_tag("/images/tiger-dragon-seal.gif", id: "navBarImage") %>
+            <strong><h2>Daily Information</h2></strong>
+          </a>
+          </div>
+
+          <div id="profileMenuWrapper">
+          <div class="ui right dropdown item" id="profileMenu"> 
+              <i class="large user circle icon" id="profileIcon"></i>
+              <div class="menu" id="navDropdown">
+                <% if current_user %>
+                <div class="disabled item" id"loggedInAs">Logged in as: <br> <%= current_user.username %></div>
+                <div class="item">Profile</div>
+                <div class="item"><%= link_to "Log out", log_out_path %></div>
+                <% end %>
+              </div>
+          </div>
+          </div>
+
+      </div>
+     </div>
+
+      <br><br><br><br>
+
+    <% end %>
+
+    <%= yield %>
+
+  </body>
+
+  <%= debug(params) %>
+</html>

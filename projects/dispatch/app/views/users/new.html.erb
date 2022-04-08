@@ -1,0 +1,54 @@
+<h1>Signup</h1>
+
+<%= form_for(@user) do |f| %>
+
+
+	<% if @user.errors.any? %>
+	        <div class="ui negative message" id="error_explanation">
+	            <h2><%= pluralize(@user.errors.count, "error") %> found:</h2>
+
+	            <ul>
+	                <% @user.errors.full_messages.each do |message| %>
+	                <li><%= message %></li>
+	                <% end %>
+	            </ul>
+	        </div>
+	<% end %>
+
+	<div class="field">
+		<%= f.label :first_name %>
+		<%= f.text_field :first_name %>
+	</div>
+
+	<div class="field">
+		<%= f.label :last_name %>
+		<%= f.text_field :last_name %>
+	</div>
+
+	<div class="field">
+		<%= f.label :email %>
+		<%= f.email_field :email %>
+	</div>
+
+	<div class="field">
+		<%= f.label :phone_number %>
+		<%= f.text_field :phone_number %>
+	</div>
+
+	<div class="field">
+		<%= f.label :password %>
+		<%= f.password_field :password %>
+	</div>
+
+	<div class="field">
+		<%= f.label :password_confirmation, "Confirmation" %>
+		<%= f.password_field :password_confirmation %>
+	</div>
+
+	<div class="ui primary button">
+		<%= f.submit "Create my acount" %>
+	</div>
+
+<% end %>
+
+

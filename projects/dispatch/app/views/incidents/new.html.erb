@@ -1,0 +1,78 @@
+<% content_for(:header) do %>
+    <link href="https://cdn.rawgit.com/mdehoog/Semantic-UI/calendar-dist/dist/components/calendar.min.css" rel="stylesheet" type="text/css" />
+
+    <%= stylesheet_link_tag 'range' %>
+<% end %>
+
+<body class="page-main">
+    <div class="new-incident">
+
+        <%= content_for(:nav) do %>
+            Report Incident
+        <% end %>
+        <%= content_for(:mobile_nav) do %>
+            Report Incident
+        <% end %>
+
+        <div class="ui middle aligned center aligned fluid grid">
+            <div class="left aligned eight wide computer fourteen wide tablet column">
+                <div class="ui button back">
+                    <%= link_to 'Back', incidents_path %>
+                </div>
+                <div class="ui segment">
+                    <div class="ui form">
+                        <%= render 'form', incident_questions: @incident_questions %>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <% content_for(:body) do %>
+            <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/calendar-dist/dist/components/calendar.min.js"></script>    
+            <%= javascript_include_tag 'range' %>
+            <%= javascript_include_tag 'dropdown' %>
+            
+            <script type="text/javascript">
+                $('.ui.radio.checkbox')
+                    .checkbox()
+                ;
+                $("#incident-questions-type-1").siblings().hide();
+                $("#incident-questions-type-1").siblings().attr("disabled", true);
+                $("#incident-questions-type-1").attr("disabled", true);
+
+
+                $( document ).ready(function() {
+                    var incidentType = 0; 
+                    var defaultSeverity = 5;
+
+                    $('#severity-range').range({
+                        min: 1,
+                        max: 10,
+                        start: defaultSeverity,
+                        step: 1,
+                        input: '#severity-input'
+                    });
+                    
+                    $('#incident-date').calendar({
+                        ampm: true,
+                        type: 'datetime',
+                        today: true
+                    });
+
+                    $('.ui.dropdown').change(function() {
+                        incidentType = $('option:selected').data("id")
+                        defaultSeverity = $('option:selected').data("defaultSeverity");
+                        $('#severity-range').range({
+                            min: 1,
+                            max: 10,
+                            start: defaultSeverity,
+                            step: 1,
+                            input: '#severity-input'
+                        });
+                    });
+                });
+
+             </script>
+        <% end %>
+    </div>
+</body>
