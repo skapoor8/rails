@@ -17,3 +17,6 @@
 *~
 *.swp
 *.swo
+
+# Mac specific
+.DS_Store
